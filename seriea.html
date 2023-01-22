@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Campeonatos Europeus de Futebol</title>
+  </head>
+  <body>
+    <section>
+
+      <nav id="nav-menu">
+        <label class="logo">
+          <a href="index.html" class="link-logo"><img src="img/logo.png" alt="logo" /></a>
+        </label>
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seriea.html" class="ativo">Serie A TIM</a></li>
+          <li><a href="premier.html">Premier League</a></li>
+          <li><a href="laliga.html">La Liga</a></li>
+          <li><a href="bundesliga.html">Bundesliga</a></li>
+        </ul>
+      </nav>
+
+      <aside>
+        <h1>Serie A</h1>
+        <p>
+          A Serie A é a primeira divisão de futebol italiana e é disputada desde
+          1929.
+        </p>
+        <p>
+          Atualmente a Serie A conta com 20 times, dos quais os 6 primeiros
+          colocados se classificam para competições europeias e os 3 últimos são
+          rebaixados para a segunda divisão (Serie B).
+        </p>
+
+        <h1>
+          Cadastre-se na newsletter para receber alertas de jogos e outras
+          informações
+        </h1>
+        <form name="frm-newsletter" method="GET" action="">
+          <label for="Nome">Nome:</label>
+          <input
+            id="Nome"
+            type="text"
+            name="Nome"
+            value=""
+            placeholder="Nome Completo"
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value=""
+            placeholder="nome@email.com"
+          />
+
+          <label for="cel">Celular:</label>
+          <input
+            id="cel"
+            type="tel"
+            name="cel"
+            value=""
+            placeholder="(99)99999-9999"
+            pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"
+          />
+
+          <div class="botao">
+            <input type="submit" name="bt-confirmar" value="CONFIRMAR" />
+            <input type="reset" name="bt-cancelar" value="CANCELAR" />
+          </div>
+        </form>
+      </aside>
+
+      <main>
+        <div class="info-cards">
+          <div class="info-card">
+            <h3>Maior campeão</h3>
+            <p>Juventus - 36 títulos</p>
+            <img src="img/juventus.png" alt="Juve" />
+          </div>
+          <div class="info-card-ultimo">
+            <h3>Último campeão</h3>
+            <p>Milan</p>
+            <img src="img/milan.png" alt="Milan" />
+          </div>
+          <div class="info-card-artilheiro">
+            <h3>Maior artilheiro</h3>
+            <p>Silvio Piola - 274 gols</p>
+            <img src="img/silviopiola.png" alt="Silvio" />
+          </div>
+          <div class="info-card">
+            <h3>Jogador com mais partidas</h3>
+            <p>Gianluigi Buffon - 656 jogos</p>
+            <img src="img/buffon.png" alt="Buffon" />
+          </div>
+        </div>
+      </main>
+
+      <nav id="nav-noticias">
+        <h1>Novidades da Bola</h1>
+
+        <a href="https://onefootball.com/pt-br/noticias/o-implacavel-napoli-derrota-a-salernitana-e-fecha-o-primeiro-turno-com-16-vitorias-em-19-partidas-36640474" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Napoli fecha o primeiro turno com 16 vitórias em 19 partidas.</h3>
+              <p>Fonte: Trivela</p>
+              <img src="img/Napoli.png" alt="Napoli" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/juventus-entra-em-campo-pela-primeira-vez-apos-perder-15-pontos-36638814" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Juventus entra em campo pela primeira vez após perder 15 pontos</h3>
+              <p>Fonte: Jogada 10</p>
+              <img src="img/Juve15pts.png" alt="Juve15pts" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/juventus-divulga-comunicado-e-ira-recorrer-de-punicao-sofrida-por-fraude-fiscal-36635880" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Juventus vai recorrer de punição sofrida por fraude fiscal</h3>
+              <p>Fonte: Esporte News Mundo</p>
+              <img src="img/JuveRecorrer.png" alt="JuveRecorrer" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/a-vocacao-ofensiva-da-atalanta-parece-estar-voltando-depois-de-fazer-oito-na-salernitana-marcou-cinco-no-spezia-36626463" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Vocação ofensiva da Atalanta parece estar voltando após golear Salernita e Spezia</h3>
+              <p>Fonte: Trivela</p>
+              <img src="img/Atalanta.png" alt="Atalanta" />
+            </div>
+          </a>
+      </nav>
+
+      <footer>
+        <div class="footer-content">
+          <img src="img/logo.png" alt="Logo do site" />
+          <p>Desenvolvido por: Gabriel William e Guilherme Alves</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

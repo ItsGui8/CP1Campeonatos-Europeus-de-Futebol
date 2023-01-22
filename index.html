@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Campeonatos Europeus de Futebol</title>
+  </head>
+  <body>
+    <section>
+
+      <nav id="nav-menu">
+        <label class="logo">
+          <a href="index.html" class="link-logo"><img src="img/logo.png" alt="logo" /></a>
+        </label>
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li><a href="index.html" class="ativo">Home</a></li>
+          <li><a href="seriea.html">Serie A TIM</a></li>
+          <li><a href="premier.html">Premier League</a></li>
+          <li><a href="laliga.html">La Liga</a></li>
+          <li><a href="bundesliga.html">Bundesliga</a></li>
+        </ul>
+      </nav>
+
+      <aside>
+        <h1>Futebol Europeu</h1>
+        <p>
+          Os melhores times de futebol do mundo jogam nas 4 principais ligas da Europa.
+        </p>
+        <p>
+          Conheça cada uma das 4 principais ligas de futebol da Europa, suas particularidades,
+          seus últimos campeões, maiores campeões, maiores artilheiros e muito mais.
+        </p>
+        <p>
+          Selecione uma liga pelo menu ou pelo card.
+        </p>
+
+        <h1>
+          Cadastre-se na newsletter para receber alertas de jogos e outras
+          informações
+        </h1>
+        <form name="frm-newsletter" method="GET" action="">
+          <label for="Nome">Nome:</label>
+          <input
+            id="Nome"
+            type="text"
+            name="Nome"
+            value=""
+            placeholder="Nome Completo"
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value=""
+            placeholder="nome@email.com"
+          />
+
+          <label for="cel">Celular:</label>
+          <input
+            id="cel"
+            type="tel"
+            name="cel"
+            value=""
+            placeholder="(99)99999-9999"
+            pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"
+          />
+
+          <div class="botao">
+            <input type="submit" name="bt-confirmar" value="CONFIRMAR" />
+            <input type="reset" name="bt-cancelar" value="CANCELAR" />
+          </div>
+        </form>
+      </aside>
+
+      <main>
+        <div class="info-cards">
+          <a href="seriea.html">
+            <div class="info-card">
+              <h3>Serie A TIM</h3>
+              <p>País: Itália</p>
+              <img src="img/SerieA.png" alt="SerieA" />
+            </div>
+          </a>
+          <a href="premier.html">
+            <div class="info-card">
+              <h3>Premier League</h3>
+              <p>País: Inglaterra</p>
+              <img src="img/PremierLeagueWhite.png" alt="PremierLeague" />
+            </div>
+          </a>
+          <a href="laliga.html">
+            <div class="info-card-artilheiro">
+              <h3>La Liga</h3>
+              <p>País: Espanha</p>
+              <img src="img/LaLigaWhite.png" alt="LaLiga" />
+            </div>
+          <a href="bundesliga.html">
+            <div class="info-card">
+              <h3>Bundesliga</h3>
+              <p>País: Alemanha</p>
+              <img src="img/Bundesliga.png" alt="Bundesliga" />
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <nav id="nav-noticias">
+        <h1>Novidades da Bola</h1>
+
+        <a href="https://onefootball.com/pt-br/noticias/federacao-russa-negocia-retorno-as-competicoes-da-uefa-36640056" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Federação Russa negocia retorno às competições da UEFA</h3>
+              <p>Fonte: Mercado do Futebol</p>
+              <img src="img/RussiaUEFA.png" alt="RussiaUEFA" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/aleksander-ceferin-sera-candidato-unico-a-presidencia-da-uefa-36542165" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Alexsander Ceferin será candidato único à presidência da UEFA</h3>
+              <p>Fonte: Gazeta Esportiva</p>
+              <img src="img/Ceferin.png" alt="Ceferin" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/liverpool-x-real-madrid-psg-x-bayern-as-oitavas-da-champions-league-36182583" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Confira os confrontos das oitavas da Champions League</h3>
+              <p>Fonte: OneFootball</p>
+              <img src="img/champions.png" alt="Champions" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/os-gols-mais-bonitos-da-fase-de-grupos-da-champions-league-202223-36465182" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Confira os gols mais bonitos da primeira fase da Champions League</h3>
+              <p>Fonte: OneFootball</p>
+              <img src="img/GolsChampions.png" alt="GolsChampions" />
+            </div>
+          </a>
+      </nav>
+
+      <footer>
+        <div class="footer-content">
+          <img src="img/logo.png" alt="Logo do site" />
+          <p>Desenvolvido por: Gabriel William e Guilherme Alves</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

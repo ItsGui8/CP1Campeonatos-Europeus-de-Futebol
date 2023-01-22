@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Campeonatos Europeus de Futebol</title>
+  </head>
+  <body>
+    <section>
+
+      <nav id="nav-menu">
+        <label class="logo">
+          <a href="index.html" class="link-logo"><img src="img/logo.png" alt="logo" /></a>
+        </label>
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seriea.html">Serie A TIM</a></li>
+          <li><a href="premier.html">Premier League</a></li>
+          <li><a href="laliga.html">La Liga</a></li>
+          <li><a href="bundesliga.html" class="ativo">Bundesliga</a></li>
+        </ul>
+      </nav>
+
+      <aside>
+        <h1>Bundesliga</h1>
+        <p>
+          A Bundesliga é a primeira divisão de futebol alemã e é disputada desde
+          1963. Atualmente a Bundesliga conta com 18 times, dos quais os 6
+          primeiros colocados em uma temporada se classificam para competições
+          europeias, o antepenúltimo deve jogar uma eliminatória para definir se
+          permanece na primeira divisão ou se é rebaixado e, os 2 últimos são
+          rebaixados diretamente para a segunda divisão (Bundesliga 2).
+        </p>
+
+        <h1>
+          Cadastre-se na newsletter para receber alertas de jogos e outras
+          informações
+        </h1>
+        <form name="frm-newsletter" method="GET" action="">
+          <label for="Nome">Nome:</label>
+          <input
+            id="Nome"
+            type="text"
+            name="Nome"
+            value=""
+            placeholder="Nome Completo"
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value=""
+            placeholder="nome@email.com"
+          />
+
+          <label for="cel">Celular:</label>
+          <input
+            id="cel"
+            type="tel"
+            name="cel"
+            value=""
+            placeholder="(99)99999-9999"
+            pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"
+          />
+
+          <div class="botao">
+            <input type="submit" name="bt-confirmar" value="CONFIRMAR" />
+            <input type="reset" name="bt-cancelar" value="CANCELAR" />
+          </div>
+        </form>
+      </aside>
+
+      <main>
+        <div class="info-cards">
+          <div class="info-card">
+            <h3>Maior campeão</h3>
+            <p>Bayern de Munique - 31 títulos</p>
+            <img src="img/bayern.png" alt="Bayern de Munique" />
+          </div>
+          <div class="info-card">
+            <h3>Último campeão</h3>
+            <p>Bayern de Munique</p>
+            <img src="img/bayern.png" alt="Bayern de Munique" />
+          </div>
+          <div class="info-card-artilheiro">
+            <h3>Maior artilheiro</h3>
+            <p>Gerd Müller - 365 gols</p>
+            <img src="img/gerd.png" alt="Gerd Müller" />
+          </div>
+          <div class="info-card">
+            <h3>Jogador com mais partidas</h3>
+            <p>Karl-Heinz Körbel - 602 jogos</p>
+            <img src="img/karl.png" alt="Karl-Heinz" />
+          </div>
+        </div>
+      </main>
+
+      <nav id="nav-noticias">
+        <h1>Novidades da Bola</h1>
+
+        <a href="https://onefootball.com/pt-br/noticias/apos-se-recuperar-de-um-cancer-haller-pode-estrear-pelo-borussia-dortmund-na-bundesliga-36641628" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Após se recuperar de um câncer, Haller pode estrar pelo Borussia Dortmund</h3>
+              <p>Fonte: Gazeta Esportiva</p>
+              <img src="img/Haller.png" alt="Haller" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/o-colonia-aplicou-sua-maior-goleada-na-bundesliga-em-40-anos-fulminantes-71-no-werder-bremen-36641031" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Colônia aplica goleada e vence Werder Bremen por 7x1</h3>
+              <p>Fonte: Trivela</p>
+              <img src="img/ColôniaWB.png" alt="ColôniaWB" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/rb-leipzig-e-bayern-ficam-no-empate-no-retorno-da-bundesliga-36635175" target="_blank">
+            <div class="info-card-noticias">
+              <h3>RB Leipzig e Bayern ficam no empate no retorno da Bundesliga</h3>
+              <p>Fonte: OneFootball</p>
+              <img src="img/RBBayern.png" alt="RBBayern" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/fique-de-olho-movimentos-interessantes-na-volta-da-bundesliga-36632092" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Fique de Olho: movimentos interessantes na volta da Bundesliga</h3>
+              <p>Fonte: Fussball Brasil</p>
+              <img src="img/BundesligaVolta.png" alt="BundesligaVolta" />
+            </div>
+          </a>
+      </nav>
+
+      <footer>
+        <div class="footer-content">
+          <img src="img/logo.png" alt="Logo do site" />
+          <p>Desenvolvido por: Gabriel William e Guilherme Alves</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

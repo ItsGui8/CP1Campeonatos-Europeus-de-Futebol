@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Campeonatos Europeus de Futebol</title>
+  </head>
+  <body>
+    <section>
+
+      <nav id="nav-menu">
+        <label class="logo">
+          <a href="index.html" class="link-logo"><img src="img/logo.png" alt="logo" /></a>
+        </label>
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seriea.html">Serie A TIM</a></li>
+          <li><a href="premier.html" class="ativo">Premier League</a></li>
+          <li><a href="laliga.html">La Liga</a></li>
+          <li><a href="bundesliga.html">Bundesliga</a></li>
+        </ul>
+      </nav>
+
+      <aside>
+        <h1>Premier League</h1>
+        <p>
+          A Premier League é a primeira divisão de futebol inglesa, disputada
+          desde 1992, quando os clubes de futebol da primeira divisão da
+          Inglaterra abandonaram a antiga Football League e fundaram a FA
+          Premier League.
+        </p>
+        <p>
+          Atualmente a liga é composta por 20 times, dos quais os 5 primeiros
+          colocados em uma temporada se classificam para competições europeias e
+          os 3 últimos são rebaixados para a segunda divisão (Football League
+          Championship).
+        </p>
+
+        <h1>
+          Cadastre-se na newsletter para receber alertas de jogos e outras
+          informações
+        </h1>
+        <form name="frm-newsletter" method="GET" action="">
+          <label for="Nome">Nome:</label>
+          <input
+            id="Nome"
+            type="text"
+            name="Nome"
+            value=""
+            placeholder="Nome Completo"
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value=""
+            placeholder="nome@email.com"
+          />
+
+          <label for="cel">Celular:</label>
+          <input
+            id="cel"
+            type="tel"
+            name="cel"
+            value=""
+            placeholder="(99)99999-9999"
+            pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"
+          />
+
+          <div class="botao">
+            <input type="submit" name="bt-confirmar" value="CONFIRMAR" />
+            <input type="reset" name="bt-cancelar" value="CANCELAR" />
+          </div>
+        </form>
+      </aside>
+
+      <main id="serie-a-info">
+        <div class="info-cards">
+          <div class="info-card">
+            <h3>Maior campeão</h3>
+            <p>Manchester United - 13 títulos</p>
+            <img src="img/munited.png" alt="Manchester United" />
+          </div>
+          <div class="info-card-ultimo">
+            <h3>Último campeão</h3>
+            <p>Manchester City</p>
+            <img src="img/mcity.png" alt="Manchester City" />
+          </div>
+          <div class="info-card-artilheiro">
+            <h3>Maior artilheiro</h3>
+            <p>Alan Shearer - 260 gols</p>
+            <img src="img/alan.png" alt="Alan Shearer" />
+          </div>
+          <div class="info-card">
+            <h3>Jogador com mais partidas</h3>
+            <p>Gareth Barry - 653 jogos</p>
+            <img src="img/gareth.png" alt="Gareth Barry" />
+          </div>
+        </div>
+      </main>
+
+      <nav id="nav-noticias">
+        <h1>Novidades da Bola</h1>
+
+        <a href="https://onefootball.com/pt-br/noticias/liverpool-e-chelsea-empatam-e-seguem-sem-reagir-na-premier-league-36638827" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Liverpool e Chelsea empatam e seguem sem reagir na Premier League</h3>
+              <p>Fonte: Esporte News Mundo</p>
+              <img src="img/LiverpoolChelsea.png" alt="LiverpoolChelsea" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/west-ham-precisava-melhorar-seu-poderio-ofensivo-e-buscou-danny-ings-para-a-sequencia-da-temporada-36638304" target="_blank">
+            <div class="info-card-noticias">
+              <h3>West Ham contrata Danny Ings para a sequência da temporada</h3>
+              <p>Fonte: Trivela</p>
+              <img src="img/ings.png" alt="Ings" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/manchester-city-recebe-wolverhampton-e-tenta-se-aproximar-da-lideranca-do-ingles-36638596" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Manchester City recebe Wolverhampton e tenta se aproximar da liderança do inglês</h3>
+              <p>Fonte: Jogada 10</p>
+              <img src="img/CityWolves.png" alt="CityWolves" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/o-west-ham-vence-uma-partida-crucial-deixa-o-z-3-e-aumenta-ainda-mais-a-crise-do-everton-36639974" target="_blank">
+            <div class="info-card-noticias">
+              <h3>West Ham vence uma partida crucial e deixa o Z-3</h3>
+              <p>Fonte: Trivela</p>
+              <img src="img/WestHam.png" alt="WestHam" />
+            </div>
+          </a>
+      </nav>
+
+      <footer>
+        <div class="footer-content">
+          <img src="img/logo.png" alt="Logo do site" />
+          <p>Desenvolvido por: Gabriel William e Guilherme Alves</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

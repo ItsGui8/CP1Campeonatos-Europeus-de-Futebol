@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Campeonatos Europeus de Futebol</title>
+  </head>
+  <body>
+    <section>
+
+      <nav id="nav-menu">
+        <label class="logo">
+          <a href="index.html" class="link-logo"><img src="img/logo.png" alt="logo" /></a>
+        </label>
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seriea.html">Serie A TIM</a></li>
+          <li><a href="premier.html">Premier League</a></li>
+          <li><a href="laliga.html" class="ativo">La Liga</a></li>
+          <li><a href="bundesliga.html">Bundesliga</a></li>
+        </ul>
+      </nav>
+
+      <aside>
+        <h1>La Liga</h1>
+        <p>
+          A La Liga é a primeira divisão de futebol espanhola e é disputada
+          desde 1929.
+        </p>
+        <p>
+          Atualmente a La Liga conta com 20 times, dos quais os 6 primeiros
+          colocados em uma temporada se classificam para competições europeias e
+          os 3 últimos são rebaixados para a segunda divisão (La Liga 2).
+        </p>
+
+        <h1>
+          Cadastre-se na newsletter para receber alertas de jogos e outras
+          informações
+        </h1>
+        <form name="frm-newsletter" method="GET" action="">
+          <label for="Nome">Nome:</label>
+          <input
+            id="Nome"
+            type="text"
+            name="Nome"
+            value=""
+            placeholder="Nome Completo"
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value=""
+            placeholder="nome@email.com"
+          />
+
+          <label for="cel">Celular:</label>
+          <input
+            id="cel"
+            type="tel"
+            name="cel"
+            value=""
+            placeholder="(99)99999-9999"
+            pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"
+          />
+
+          <div class="botao">
+            <input type="submit" name="bt-confirmar" value="CONFIRMAR" />
+            <input type="reset" name="bt-cancelar" value="CANCELAR" />
+          </div>
+        </form>
+      </aside>
+
+      <main id="serie-a-info">
+        <div class="info-cards">
+          <div class="info-card">
+            <h3>Maior campeão</h3>
+            <p>Real Madrid - 35 títulos</p>
+            <img src="img/madrid.png" alt="Real Madrid" />
+          </div>
+          <div class="info-card">
+            <h3>Último campeão</h3>
+            <p>Real Madrid</p>
+            <img src="img/madrid.png" alt="Real Madrid" />
+          </div>
+          <div class="info-card-artilheiro">
+            <h3>Maior artilheiro</h3>
+            <p>Lionel Messi - 474 gols</p>
+            <img src="img/messi.png" alt="Lionel Messi" />
+          </div>
+          <div class="info-card">
+            <h3>Jogador com mais partidas</h3>
+            <p>Andoni Zubizarreta - 622 jogos</p>
+            <img src="img/andoni.png" alt="Andoni Zubizarreta" />
+          </div>
+        </div>
+      </main>
+
+      <nav id="nav-noticias">
+        <h1>Novidades da Bola</h1>
+
+        <a href="https://onefootball.com/pt-br/noticias/o-sevilla-garante-uma-dramatica-vitoria-aos-44-do-2-tempo-e-deixa-a-zona-de-rebaixamento-de-la-liga-36641545" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Sevilla garate vitória aos 44 do 2º tempo e deixa a zona de rebaixamento</h3>
+              <p>Fonte: Trivela</p>
+              <img src="img/Sevilla.png" alt="Sevilla" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/mais-consistente-que-nas-ultimas-temporadas-a-real-sociedad-vence-a-quinta-seguida-e-se-consolida-no-g-4-36638967" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Real Sociedad vence a quinta seguida e se consolida no G-4</h3>
+              <p>Fonte: Trivela</p>
+              <img src="img/RealSociedad.png" alt="RealSociedad" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/o-real-madrid-nao-esta-morto-36632401" target="_blank">
+            <div class="info-card-noticias">
+              <h3>O Real Madrid não está morto</h3>
+              <p>Fonte: Jogada 10</p>
+              <img src="img/RealVini.png" alt="RealVini" />
+            </div>
+          </a>
+
+          <a href="https://onefootball.com/pt-br/noticias/erro-do-var-em-elche-x-cadiz-acende-sinal-de-alerta-na-espanha-36612704" target="_blank">
+            <div class="info-card-noticias">
+              <h3>Erro do VAR em Elche x Cadiz acende sinal de alerta na Espanha</h3>
+              <p>Fonte: Esporte News Mundo</p>
+              <img src="img/VAR.png" alt="VAR" />
+            </div>
+          </a>
+      </nav>
+
+      <footer>
+        <div class="footer-content">
+          <img src="img/logo.png" alt="Logo do site" />
+          <p>Desenvolvido por: Gabriel William e Guilherme Alves</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
